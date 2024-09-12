@@ -34,7 +34,7 @@ const knex = require("../database/knex");
 
         await knex("tags").insert(tagsInsert);
 
-        response.json();
+       return response.json();
 
     }
 
